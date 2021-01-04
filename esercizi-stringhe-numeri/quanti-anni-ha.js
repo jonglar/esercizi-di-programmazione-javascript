@@ -11,3 +11,13 @@
 
   http://www.imparareaprogrammare.it
 */
+console.log('*** Quanti anni ha? ***');
+console.log('anno corrente = 2021, anno di nascita = 1988');
+let currentYear = 2021;
+let birthYear = 1988;
+let howOld = currentYear-birthYear;
+let yearsTo = 100;
+console.log('Età attuale = ' + howOld);
+console.log('Anni mancati a ' + yearsTo + ' = ' + (yearsTo-howOld));
+console.log('*** Quanti anni ha? ***');
+console.log('');
