@@ -12,3 +12,12 @@
 
   http://www.imparareaprogrammare.it
 */
+console.log('*** Conta il tempo ***');
+let input = 36100;
+console.log('Secondi = ' + input);
+let secs = input % 60;
+let mins = (input - secs) / 60;
+let hours = (mins - (mins % 60)) / 60;
+console.log('Ore = ' + hours + ', Minuti = ' + mins + ', Secondi = ' + secs);
+console.log('*** Conta il tempo ***');
+console.log('');
