@@ -21,3 +21,7 @@ let hours = (mins - (mins % 60)) / 60;
 console.log('Ore = ' + hours + ', Minuti = ' + mins + ', Secondi = ' + secs);
 console.log('*** Conta il tempo ***');
 console.log('');
+console.log('*** esempio TypeScript (ALT+96) ***');
+console.log(` Ore = ${hours}, Minuti = ${mins}, Secondi = ${secs} `);
+console.log('*** esempio TypeScript (ALT+96) ***');
+console.log('');
