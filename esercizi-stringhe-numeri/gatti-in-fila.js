@@ -17,3 +17,10 @@
 
   http://www.imparareaprogrammare.it
 */
+var cats = 83;
+var pipes = 5;
+var catsPerPipe = Math.ceil(cats / pipes);
+var emptySlots = (catsPerPipe * pipes) - cats;
+console.log(`Gatti = ${cats}, File = ${pipes}`);
+console.log('Numero massimo di gatti per ogni fila = '+catsPerPipe);
+console.log('Posti vuoti = '+emptySlots);
