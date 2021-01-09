@@ -19,3 +19,33 @@
 
   http://www.imparareaprogrammare.it
 */
+let player1 = Math.floor(Math.random() * (100-1) + 1);
+let player2 = Math.floor(Math.random() * (100-1) + 1);
+let dice = Math.floor(Math.random() * (100-1) + 1);
+console.log(`player1 = ${player1}`);
+console.log(`player2 = ${player2}`);
+console.log(`dice = ${dice}`);
+
+let match = 'not match';
+let nearest = '';
+switch(dice) {
+  case player1:
+    match = 'player1';
+    break;
+  case player2:
+    match = 'player2';
+    break;
+  default:
+    match = 'nobody';
+    if (Math.abs(dice-player1) < Math.abs(dice-player2)) {
+      nearest = 'player1';
+    } else {
+      nearest = 'player2';
+    }
+}
+
+if (match == 'nobody') {
+  console.log(`${match} matched number! but ${nearest} is the nearest!`);
+} else {
+  console.log(`WOW! ${match} matched the number!`);
+}
