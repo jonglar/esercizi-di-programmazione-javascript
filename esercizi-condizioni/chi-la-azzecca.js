@@ -19,9 +19,9 @@
 
   http://www.imparareaprogrammare.it
 */
-let player1 = Math.floor(Math.random() * (100-1) + 1);
-let player2 = Math.floor(Math.random() * (100-1) + 1);
-let dice = Math.floor(Math.random() * (100-1) + 1);
+const player1 = Math.floor(Math.random() * (100-1) + 1);
+const player2 = Math.floor(Math.random() * (100-1) + 1);
+const dice = Math.floor(Math.random() * (100-1) + 1);
 console.log(`player1 = ${player1}`);
 console.log(`player2 = ${player2}`);
 console.log(`dice = ${dice}`);

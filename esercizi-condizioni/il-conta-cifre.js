@@ -11,3 +11,6 @@
 
   http://www.imparareaprogrammare.it
 */
+const number = 999;
+
+console.log(`Number ${number} has ${number.toString().length} digits`);

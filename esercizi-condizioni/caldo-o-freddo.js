@@ -9,7 +9,7 @@
 
   http://www.imparareaprogrammare.it
 */
-let temps = [10, -2, 31, 22, 15, -6, 7, 524, 4, 76, -52, -22, -654, 55, -85, 8];
+const temps = [10, -2, 31, 201, -202, 22, 15, -6, 7, 124, 4, 76, -52, -22, -154, 55, -85, 8];
 let hottest = 0;
 let coldest = 0;
 for (let i=0; i<temps.length-1; i++) {

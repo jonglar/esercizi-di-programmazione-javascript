@@ -18,3 +18,21 @@
 
   http://www.imparareaprogrammare.it
 */
+const v = 30;
+let vString = '';
+
+if (v < 18) {
+  vString = 'insufficiente';
+} else if ((v>=18)&&(v<21)) {
+  vString = 'sufficiente';
+} else if ((v>=21)&&(v<24)) {
+  vString = 'buono';
+} else if ((v>=24)&&(v<27)) {
+  vString = 'distinto';
+} else if ((v>=27)&&(v<=29)) {
+  vString = 'ottimo';
+} else if (v==30) {
+  vString = 'eccellente';
+}
+
+console.log(vString);

@@ -22,7 +22,7 @@
 
   http://www.imparareaprogrammare.it
 */
-let day = 3;
+const day = 3;
 
 switch (day) {
   case 1:
