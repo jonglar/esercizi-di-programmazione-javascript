@@ -21,3 +21,5 @@
 
   http://www.imparareaprogrammare.it
 */
+var n = prompt('numero?');
+console.log(`hai scelto il num ${n}`);
