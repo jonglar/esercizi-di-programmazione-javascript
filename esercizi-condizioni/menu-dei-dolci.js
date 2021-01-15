@@ -21,5 +21,31 @@
 
   http://www.imparareaprogrammare.it
 */
-var n = prompt('numero?');
-console.log(`hai scelto il num ${n}`);
+
+const menu = [
+  '1. Tiramisù',
+  '2. Torta della nonna',
+  '3. Cheesecake alla nutella',
+  '4. Macedonia'
+]
+
+menu.forEach(item => console.log(item));
+let choise = prompt('Fai la tua scelta');
+switch (choise) {
+  case '1':
+    console.log('Tiramisù');
+    break;
+  case '2':
+    console.log('Torta della nonna');
+    break;
+  case '3':
+    console.log('Cheesecake alla nutella');
+    break;
+  case '4':
+    console.log('Macedonia');
+    break;
+  default:
+    console.log('Scelta non valida');
+    break;
+}
+console.log(choise);
