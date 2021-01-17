@@ -1,0 +1,20 @@
+Name: Ricettando
+
+Description:
+L'app sarà un raccoglitore di ricette, popolato dagli utenti stessi.
+Sarà possibile registrare nuove ricette localmente sul dispositivo, condividerle sul un proprio cloud privato
+e sul DB comune della piattaforma pubblicamente con altri utenti registrati (forse anche con quelli non registrati).
+Per ogni ricetta saranno definiti il titolo, la descrizione, ingredienti, procedimento, eventuali valori
+nutrizionali, allergeni, foto/video, recensioni.
+In una ricetta è possibile aggiungere alla lista della spesa gli ingredienti in automatico.
+Informazioni correlate alla ricetta potrebbero essere: varianti, suggerimenti, trick, ricette simili.
+Utility secondarie presenti nell'app: metodi alternativi di misurazione ingredienti, punti vendita più adatti
+agli ingredienti, possibile chat/forum di discussione, composizione menu consigliati, consumazione avanzi, challange.
+
+Entities definition:
+User: nome, cognome, età, sesso, città, skill, allergeni, preferenze
+    r-Ricette, r-Media, r-Recensioni
+Receipt: titolo, descrizione, ingredienti, procedimento, allergeni, valori nutrizionali, timestamp
+    r-Utente, r-Media, r-Recensioni
+Review: voto, commento, timestamp
+    r-Utente, r-Ricetta
