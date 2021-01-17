@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Ricettando (Beta)</title>
+</head>
+<body>
+    <header>
+        <h1>Ricettando (Beta)</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./user-create.html">New user</a></li>
+            <li><a href="./users-list.html">Users</a></li>
+            <li><a href="./main.html">Main-Html</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="user-new">
+            <h2>New user</h2>
+            <form action="add-user.php">
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Mario">
+                <br>
+                <label for="surname">Surname: </label>
+                <input type="text" id="surname" placeholder="Rossi">
+                <br>
+                <label for="birthdate">Birth date: </label>
+                <input type="date" id="birthdate">
+                <br>
+                <label for="gender">Gender: </label>
+                <input type="radio" name="gender" id="gender" value="M">M
+                <input type="radio" name="gender" id="gender" value="F">F
+                <br>
+                <label for="location">Location: </label>
+                <select name="location" id="location">
+                    <option value="Italy">Italy</option>
+                    <option value="Spain">Spain</option>
+                    <option value="France">France</option>
+                </select>
+                <br>
+                <label for="skills">Skills: </label>
+                <select name="skills" id="skills">
+                    <option value="junior">Junior</option>
+                    <option value="medium">Medium</option>
+                    <option value="senior">Senior</option>
+                </select>
+                <br>
+                <label for="allergens">Allergens: </label>
+                <select multiple name="allergens" id="allergens">
+                    <option value="lactose">Lactose</option>
+                    <option value="gluten">Gluten</option>
+                </select>
+                <br>
+                <label for="favorites">Favorites: </label>
+                <select multiple name="favorites" id="favorites">
+                    <option value="salty">Salty</option>
+                    <option value="dessert">Dessert</option>
+                </select>
+                <br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section id="copyright">Jonglar 2021</section>
+    </footer>
+</body>
+</html>

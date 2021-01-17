@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ul, ol { margin: 10px 30px; }
+main {
+    margin: 20px;
+}
+header {
+    height: 200px;
+    background-image: url(https://picsum.photos/id/684/1920/300?blur=5);
+}
+header * {
+    position: relative;
+    top: 40%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+nav {
+    float: left;
+    width: 100%;
+    height: 40px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #aaa;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+nav li {
+    float: left;
+    padding: 10px;
+    margin: 0 10px;
+}
+nav li:hover { border-bottom: 3px solid rgb(226, 109, 13); }
+nav a {
+    text-decoration: none;
+    color: red;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px dashed #555;
+}
+section#copyright { float: initial; }
