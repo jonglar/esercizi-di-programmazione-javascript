@@ -1,14 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 header {
-    float: left;
-    width: 100vw;
-    height: 10vh;
-    background-color: darkcyan;
     padding: 1vw;
-    margin-bottom: 1vw;
 }
 main {
     padding: 1vw;

@@ -12,7 +12,35 @@
         <h1>Ricettando</h1>
     </header>
     <main>
-        <div w3-include-html="main-menu.html"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Clients</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toogle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Dropdown</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="dropdown-item"><a href="#">item 1</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="dropdown-item"><a href="#">item 2</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="dropdown-item"><a href="#">item 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
         <h2>La cucina a proprio gusto</h2>
         <p>
             Officia quis sunt laboris ipsum labore commodo occaecat irure ex magna nostrud nisi incididunt amet. Laborum Lorem deserunt aliqua adipisicing nisi consequat aliqua ad ullamco ipsum. Occaecat ex id veniam pariatur voluptate nisi deserunt est.
@@ -22,9 +50,5 @@
         </p>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
-    <script>
-        includeHTML();
-    </script>
 </body>
 </html>
