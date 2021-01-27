@@ -1,6 +1,12 @@
+* {
+    font: normal 400 14px/1.2em 'Roboto', sans-serif;
+}
 header {
     padding: 1vw;
 }
 main {
     padding: 1vw;
+}
+.navbar-collapse {
+    padding: .3125rem;
 }
