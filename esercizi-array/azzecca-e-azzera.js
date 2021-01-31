@@ -12,3 +12,33 @@
 
   http://www.imparareaprogrammare.it
 */
+const min = 1;
+const max = 100;
+
+// build Array(100) with random values between max and min
+let numeri = new Array(max);
+for(i=0;i<max;i++) { numeri[i] = ''; }
+numeri.map((el,i,arr) => arr[i] = Math.floor(Math.random() * (max - min) +1));
+console.log('numeri = ' + numeri);
+
+// user's choise
+let exit = false;
+do {
+  let choise = prompt('Choose a value:');
+  switch (choise) {
+    case ('1'):
+      numeri.filter( e => e == choise ).forEach( (e,i,arr) => numeri[i]=0 );
+      console.log('caso eseguito');
+      console.log(numeri);
+      break;
+    case ('-1'):
+      exit = true;
+      console.log('Exit request');
+      break;
+    default:
+      console.log('Invalid choise');
+      break;
+  }
+} while(!exit);
+
+console.log(numeri);
