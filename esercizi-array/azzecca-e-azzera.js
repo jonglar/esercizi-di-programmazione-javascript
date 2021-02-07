@@ -1,6 +1,6 @@
 /*
   Azzecca e azzera
-  Scrivi un programma che dato un array di 100 elementi, lo riempia con numeri interi casuali da 1 a 50.
+  Scrivi un programma che dato un array di 100 elementi, lo riempia con numbers interi casuali da 1 a 50.
   Permetti all'utente di inserire un numero e azzera tutti i gli elementi nell'array principale che sono suoi multipli.
   Richiedi all'utente un altro numero e così via.
   Il programma termina quando tutti gli elementi dell'array principale sono uguali a zero.
@@ -12,33 +12,32 @@
 
   http://www.imparareaprogrammare.it
 */
+
+// config
 const min = 1;
-const max = 100;
+const max = 50;
+const nElements = 50;
+let numbers = new Array(nElements);
+let choise = '';
+let zeroStop = 0;
 
 // build Array(100) with random values between max and min
-let numeri = new Array(max);
-for(i=0;i<max;i++) { numeri[i] = ''; }
-numeri.map((el,i,arr) => arr[i] = Math.floor(Math.random() * (max - min) +1));
-console.log('numeri = ' + numeri);
+for(i=0 ; i<numbers.length ; i++) numbers[i] = Math.floor(Math.random() * (max - min) +1);
+console.log('numbers = ' + numbers);
 
-// user's choise
-let exit = false;
+// getting user's choises until 0 choosen or every elements changed to 0
 do {
-  let choise = prompt('Choose a value:');
-  switch (choise) {
-    case ('1'):
-      numeri.filter( e => e == choise ).forEach( (e,i,arr) => numeri[i]=0 );
-      console.log('caso eseguito');
-      console.log(numeri);
-      break;
-    case ('-1'):
-      exit = true;
-      console.log('Exit request');
-      break;
-    default:
-      console.log('Invalid choise');
-      break;
-  }
-} while(!exit);
+  zeroStop = 0
+  choise = prompt('Choose a value:');
 
-console.log(numeri);
+  // array parsing with user's choise
+  numbers.forEach(function(e,i,a) {
+    if (e%choise == 0 ) {
+      a[i] = 0;
+      zeroStop++;
+    }
+  });
+  console.log(`numbers after = ${numbers}`);
+} while( (choise != 0) && (zeroStop != numbers.length) );
+
+if (zeroStop == numbers.length) console.log(`${zeroStop} elements changed on ${numbers.length}`);
