@@ -15,3 +15,16 @@
 
   http://www.imparareaprogrammare.it
 */
+
+// config
+const min = 1;
+const max = 50;
+let numbers = new Array();
+
+const nElements = prompt('How much elements?');
+
+// build Array(100) with random values between max and min
+for(i=0 ; i<nElements ; i++) numbers[i] = Math.floor(Math.random() * (max - min) +1);
+
+console.log(`numbers = ${numbers}`);
+console.log(`reversed numbers = ${numbers.reverse()}`);
