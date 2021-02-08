@@ -79,7 +79,10 @@ switch (matches) {
   case 5:
     console.log('CINQUINA!!!');
     break;
-  default:
+  case nElements:
     console.log('TOMBOLAAAAAAAAAA!!!!');
+    break;
+  default:
+    console.log('default???');
     break;
 }
